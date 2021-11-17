@@ -11,9 +11,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public GameObject loadingScreen;
 
-    private void Awake()
+    private void Awake() //this is when the script starts it will load the TITLE_SCREEN Scene but keep loading screen scene Loaded!
     {
-        //This will load the screen in Addition to any scene therefor it will always will be loaded in the background.
         instance = this;
 
         SceneManager.LoadSceneAsync((int)SceneIndexes.TITLE_SCREEN, LoadSceneMode.Additive);
@@ -26,7 +25,7 @@ public class GameManager : MonoBehaviour
         loadingScreen.gameObject.SetActive(true);
 
         SceneManager.UnloadSceneAsync((int)SceneIndexes.TITLE_SCREEN);
-        SceneManager.LoadSceneAsync((int)SceneIndexes.MAIN_SCENE, LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync((int)SceneIndexes.LEVEL_01, LoadSceneMode.Additive);
 
         //Section below is where it checks to see if the scene is done loading so it can 
         StartCoroutine(GetSceneLoadProgress());

@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
         SceneManager.UnloadSceneAsync((int)SceneIndexes.TITLE_SCREEN);
         SceneManager.LoadSceneAsync((int)SceneIndexes.LEVEL_01, LoadSceneMode.Additive);
+        Debug.Log("LoadGame Just Got A Call and Wants to Load a Level");
 
         //Section below is where it checks to see if the scene is done loading so it can 
         StartCoroutine(GetSceneLoadProgress());

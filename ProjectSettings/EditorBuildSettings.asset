@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Overtime/Scenes/Loading Screen.unity
+    path: Assets/Overtime/Scenes/Ui Scenes/Loading Screen.unity
     guid: dead05e7b44e82143938ccd4ed3f7013
   - enabled: 1
-    path: Assets/Overtime/Scenes/Main Menu.unity
+    path: Assets/Overtime/Scenes/Ui Scenes/Main Menu.unity
     guid: 8944b9e36fd9ab64e93a07c97c6a3c77
   - enabled: 1
     path: Assets/Overtime/Scenes/Rooms/Room 01.unity

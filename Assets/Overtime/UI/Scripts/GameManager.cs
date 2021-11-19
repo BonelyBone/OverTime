@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     //Object Public stuff
     public static GameManager instance;
     public GameObject loadingScreen;
-
+  
     private void Awake() //this is when the script starts it will load the TITLE_SCREEN Scene but keep loading screen scene Loaded!
     {
         instance = this;
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
         SceneManager.UnloadSceneAsync((int)SceneIndexes.TITLE_SCREEN);
         SceneManager.LoadSceneAsync((int)SceneIndexes.LEVEL_01, LoadSceneMode.Additive);
-        Debug.Log("LoadGame Just Got A Call and Wants to Load a Level");
+        Debug.Log("LoadGame just got a called and Wants to Load a Level");
 
         //Section below is where it checks to see if the scene is done loading so it can 
         StartCoroutine(GetSceneLoadProgress());

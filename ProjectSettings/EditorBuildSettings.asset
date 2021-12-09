@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Overtime/Scenes/Rooms/Room 01.unity
     guid: 1fd99cd476bc27a4187bde14cc5aa730
+  - enabled: 1
+    path: Assets/Overtime/Scenes/Rooms/Room 02.unity
+    guid: b7fae9fa54918954995aae8ec6c8aa9d
   m_configObjects: {}

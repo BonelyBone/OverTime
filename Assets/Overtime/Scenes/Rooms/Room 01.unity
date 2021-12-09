@@ -1013,7 +1013,7 @@ GameObject:
   - component: {fileID: 45570967}
   - component: {fileID: 45570966}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Dialouge Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2781,10 +2781,10 @@ RectTransform:
   m_Father: {fileID: 1276128033}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 15}
-  m_SizeDelta: {x: 918.6742, y: 30}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -99, y: 20}
+  m_SizeDelta: {x: 186.5571, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &207858866
 MonoBehaviour:
@@ -2829,7 +2829,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 207858867}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 558643870}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &207858867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2843,7 +2855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.98823535, g: 0.48627454, b: 0.25490198, a: 1}
+  m_Color: {r: 0.78823537, g: 0.5647059, b: 0.41960788, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6368,6 +6380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 558643871}
+  - component: {fileID: 558643872}
   m_Layer: 0
   m_Name: DialougeManager
   m_TagString: Untagged
@@ -6389,6 +6402,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &558643872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558643870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777452078fdfe0440b28c1cdaad0f39f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIDialouge: {fileID: 1276128032}
+  nameText: {fileID: 45570966}
+  DialougeText: {fileID: 2101094755}
 --- !u!4 &571710647 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eb7f0217a8adb29488baa99fa1a2341d, type: 3}
@@ -12415,8 +12443,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 107.6014}
-  m_SizeDelta: {x: 831.356, y: 215.2028}
+  m_AnchoredPosition: {x: 0, y: 119}
+  m_SizeDelta: {x: 569.7776, y: 225.8041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276128034
 MonoBehaviour:
@@ -12431,7 +12459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.94117653, g: 0.6745098, b: 0.49803925, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20061,7 +20089,7 @@ GameObject:
   - component: {fileID: 2101094756}
   - component: {fileID: 2101094755}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Dialouge Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20083,8 +20111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 101.66366}
-  m_SizeDelta: {x: 772.45, y: 120.8873}
+  m_AnchoredPosition: {x: 0, y: 112}
+  m_SizeDelta: {x: 530.1574, y: 120.8873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101094755
 MonoBehaviour:
@@ -20293,6 +20321,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eb7f0217a8adb29488baa99fa1a2341d, type: 3}
   m_PrefabInstance: {fileID: 45879546}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2121523462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121523464}
+  - component: {fileID: 2121523463}
+  m_Layer: 0
+  m_Name: Adam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2121523463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121523462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dfc5268c8dfa1542b2e57903ce4dfec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialouge:
+    name: Adam (The Dev)
+    sentences:
+    - Hey, welcome to Overtime the... not so working demo for one of my student projects.
+    - As you can see there isn't much here...
+    - But that is fine, we clearly don't need working mechanics in a video game.
+      A lot of it was removed due to time constraints... and my lack of knowledge
+      of this software.
+    - Anyways, as you can see there are some remiants of the orignal game. Feel free
+      to look around and when you are ready, click on the ready button to go to the
+      next level.
+--- !u!4 &2121523464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121523462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 191.53981, y: 161.58746, z: -1159.6344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2122361077
 PrefabInstance:
   m_ObjectHideFlags: 0
